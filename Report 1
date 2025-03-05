@@ -1,0 +1,17 @@
+For this assignment I used chatgpt 4.0 to generate the code. It was pretty straightforward for the most part as it mainly just used code and the description of the player types as prompts. There was one weird bug I noticed while testing the game with my UniquePlayer and the AI’s UniquePlayer where it also included WimpPlayer despite it not being selected. I went through the code and noticed it was just missing a break so I just added it in, instead of putting it through chatgpt again. 
+I could have done this project in a couple less prompts than I actually did, mainly just because I’d forget one detail to mention and would have to create a follow up prompt for it.
+I created a separate java project to keep this one separate from my Bulldog program. I kept the name UniquePlayer open for mine so I could just copy the code into this project. The AI’s UniquePlayer is referred to as AIUniquePlayer to differentiate between them.
+
+Prompts
+HumanPlayer
+1:	The following code is the Player class. This class is expanded by several other java classes for various player types. HumanPlayer Objects in the HumanPlayer class will print the cumulative score earned so far in this turn, and ask the user to choose whether or not to end the turn. The object will use System.in to read the user's response from the keyboard. • RandomPlayer Objects in the RandomPlayer class will choose to continue or end the current turn randomly, with a 50% probability for either choice. • FifteenPlayer Objects in the FifteenPlayer class will always choose to continue the turn until a score of at least 15 is reached, at which point the object will choose to end the turn. (Note that, of course, if a 6 is rolled, the turn ends with a score of 0.) With these instructions create the class for HumanPlayer. Code was attached for Player.java
+2:	Format it so it responds in the same way as the provided WimpPlayer class from the same program.
+FifteenPlayer
+3:	Create FifteenPlayer in the same formatting as WimpPlayer
+RandomPlayer
+4:	Create RandomPlayer in the same formatting as WimpPlayer
+AIUniquePlayer
+5:	Create one more type of player called AIUniquePlayer. This player type can have any strategy type that is not already used by the other player types and simply roll 3 times per turn.
+Bulldog
+6: 	Now create the main logic of the game Bulldog in a class called Bulldog. All players will be part of an ArrayList of the type Player. The user will specify how many players they want and which types of players they want of the 5 total types of players. The game continues until one player reaches the max score of 104.
+7:	Add in an additional player called UniquePlayer
