@@ -1,0 +1,21 @@
+	The use of AI tools in the programming field is being used more as time goes on. This significantly decreases the amount of time required to create complex code, 
+however this doesn’t necessarily mean that AI makes the most efficient or effective code. In this project, we have been working on identifying the differences between human 
+and AI code using a game called bulldog. In my experience I have noticed a few main differences between my code and the AI’s code.
+
+	The main advantage of artificial intelligence is how much code it can create in a short amount of time. The entire bulldog game took me about 2 hours to make. This includes
+the length of time to write all players, the main game’s logic, and debugging. After receiving feedback on my code, I spent an additional 30 minutes to make adjustments to my
+code that way it would be closer to the specified logic. By comparison, the AI only took about 20 minutes to generate all the code required for the entire game. I could have
+potentially cut down on this time even further by reducing the number of prompts, however I would forget one detail when creating the prompt and need a follow-up prompt.
+
+	From looking at the AI code it was clearly obvious from a glance which was created by the AI and which was mine. The AI had a tendency to use while loops more often than I
+did, it would use switch/case statements instead of if, its main method had very little code in it, and the code was overall much more condensed than mine. It cut out a few
+methods I had created to create more condensed and efficient means of scoring for each player but had created a couple more methods in another place to get rid of some of the
+code in the main method. For creating comments in the same style as the provided code, I did have to create a prompt with all code in the provided code and then tell it to
+create its own in the same style for every single player.
+
+The quality of the AI code was extremely good. It was efficient, and while at least one of the methods it created wasn’t actually necessary it was organized. From the code
+the AI created there was only bug that I noticed, which was likely more due to the fact that I forgot to tell it to add in my UniquePlayer in my initial prompt. When adding
+in my UniquePlayer to the code it generated it didn’t include a break statement. This led to WimpPlayer, which was the last listed player in its code to be included in one of
+the tests I did than included my UniquePlayer. The only thing necessary to fix this bug was to add in a single break statement.
+Overall, the AI code was extremely good. It had less bugs than mine did, it took a fraction of the time to create, but the overall formatting and generated code was different
+from how a human would ordinarily code. It was easy to tell at a glance which was which even though it was using the same prompt and sample code. 
