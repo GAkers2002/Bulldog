@@ -1,0 +1,7 @@
+The main focus of this project was to evaluate the differences between human and AI code, to find their strengths and weaknesses. The main game logic is in BulldogAI.java.
+
+The Bulldog program is a simple game with a varity of players that the user can select. Reaching a score of 104 or higher will result in a win.
+
+How to Run
+After downloading all files run the Bulldog.java program to play the game. You will be prompted for the number of players and what player types you would like to participate in the game.
+The players include a human, wimp, fifteen player, unique player, and a random player. After entering your players, the game will begin.
