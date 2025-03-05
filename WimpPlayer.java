@@ -7,6 +7,7 @@
 /*           A WimpPlayer always rolls the die once     */
 /*      See Kettering University, CS-101, Prog 6        */
 /********************************************************/
+//Modified 3/5/2025 to use the Dice class
 
 public class WimpPlayer extends Player {
 
@@ -41,7 +42,8 @@ public class WimpPlayer extends Player {
 	/*       which will be zero if a six was rolled         */
 	/********************************************************/
 	public int play() {
-		int roll = (int) (Math.random()*6 + 1);
+		Dice die = new Dice(6);
+		int roll = die.roll();
 		System.out.print("   Player " + getName() + " rolled " + roll );
 		if (roll != 6) {
 			System.out.println(" and chose not to continue, scoring " 
